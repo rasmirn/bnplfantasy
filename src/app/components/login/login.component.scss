@@ -1,0 +1,42 @@
+.loginFrame{
+  width: 375px;
+  height: 403px;
+  left: 0px;
+  top: 409px;
+  background: black;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+.continue {
+  width: 323px;
+  height: 45px;
+  left: 26px;
+  top: 628px;
+  color: #FBFBFB;
+}
+
+.continueButton {
+  position: absolute;
+  width: 323px;
+  height: 45px;
+  left: 26px;
+  top: 628px;
+  background: linear-gradient(90deg, #007ADF 0%, #00ECBC 100%);
+  border-radius: 20px;
+}
+
+.letsPlay {
+  width: 143px;
+  height: 25px;
+  left: 116px;
+  top: 436px;
+  font-family: Amiko;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FBFBFB;
+}

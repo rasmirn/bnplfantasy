@@ -1,0 +1,25 @@
+<p>login works!</p>
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+  <div class="form-group">
+    <label for="phoneNumber">Phone Number</label>
+    <input required ngModel minlength="10" maxlength="10" pattern="[0-9]+" name="phoneNumber" #phoneNumber='ngModel' type="text" id="number" class="form-control">
+    <div class="alert alert-danger" *ngIf='phoneNumber.touched && !phoneNumber.valid'>
+      <div *ngIf='phoneNumber.errors?.required'>
+        Phone number is a required field and minimum of 10 digits.
+      </div>
+      <div *ngIf='phoneNumber.errors?.minlength'>
+        Phone number should be of minimum 10 digits.
+      </div>
+      <div *ngIf='phoneNumber.errors?.pattern'>
+        Please input digits only.
+      </div>
+    </div>
+    <label for="password">Password</label>
+    <input required ngModel name="password" #password="ngModel" id="password" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
+        Password is a required field.
+    </div>
+  </div>
+  <div>Continue</div>
+  <button class="btn btn-primary">Submit</button>
+</form>
